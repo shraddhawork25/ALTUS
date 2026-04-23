@@ -8,64 +8,134 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         :root { --gold: #c5a059; --dark: #1a1a1a; }
-        .bg-gold { background-color: var(--gold); }
         .text-gold { color: var(--gold); }
-        .border-gold { border-color: var(--gold); }
-        .btn-gold { border: 2px solid var(--gold); color: var(--gold); transition: all 0.3s; }
+        .bg-gold { background-color: var(--gold); }
+        .btn-gold { border: 2px solid var(--gold); color: var(--gold); transition: 0.3s; font-weight: 600; letter-spacing: 0.1em; }
         .btn-gold:hover { background: var(--gold); color: white; }
+        html { scroll-behavior: smooth; }
+        .hero-overlay { background: rgba(0, 0, 0, 0.5); }
     </style>
 </head>
-<body class="bg-white text-gray-900 overflow-x-hidden">
+<body class="bg-white text-gray-900 font-sans">
 
-    <section class="relative h-screen flex items-center justify-center text-center bg-black text-white">
-        <div class="absolute inset-0 opacity-60 bg-cover bg-center" style="background-image: url('assets/hero-vastrapur.jpg');"></div>
-        <div class="relative z-10 px-4" data-aos="fade-up">
-            <h1 class="text-4xl md:text-6xl font-serif mb-4">The Vastrapur You've Been Waiting For</h1> <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">An address of rare distinction crafted by India's No.1 real estate developer.</p> <a href="#enquire" class="btn-gold px-8 py-3 uppercase tracking-widest font-semibold">Register Your Interest</a> </div>
-    </section>
-
-    <section class="py-20 px-6 max-w-7xl mx-auto text-center">
-        <h2 class="text-3xl font-serif mb-12" data-aos="fade-right">A Real Estate Paradise</h2> <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div data-aos="zoom-in">
-                <p class="text-4xl font-bold text-gold">13%</p> <p class="text-sm uppercase tracking-tighter">Price Rise (3 yrs)</p> </div>
-            <div data-aos="zoom-in" data-aos-delay="100">
-                <p class="text-4xl font-bold text-gold">#1</p> <p class="text-sm uppercase tracking-tighter">UNESCO Heritage City</p> </div>
-            <div data-aos="zoom-in" data-aos-delay="200">
-                <p class="text-4xl font-bold text-gold">2025</p> <p class="text-sm uppercase tracking-tighter">Metro Blue Line Operational</p> </div>
-            <div data-aos="zoom-in" data-aos-delay="300">
-                <p class="text-4xl font-bold text-gold">₹1,300 Cr</p> <p class="text-sm uppercase tracking-tighter">Revenue Potential</p> </div>
+    <section class="relative h-screen flex items-center justify-center bg-black overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80');"></div>
+        <div class="relative z-10 text-center px-6" data-aos="fade-up">
+            <p class="text-gold uppercase tracking-[0.3em] mb-4 text-sm font-bold">Godrej Properties Legacy</p>
+            <h1 class="text-white text-4xl md:text-7xl font-serif mb-6 uppercase leading-tight">The Vastrapur You've <br>Been Waiting For</h1>
+            <p class="text-white text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90">An address of rare distinction crafted by India's No.1 real estate developer.</p>
+            <a href="#enquire" class="btn-gold px-12 py-4 uppercase inline-block">Register Your Interest</a>
         </div>
     </section>
 
-    <section class="py-20 bg-gray-50 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div data-aos="fade-left">
-                <h2 class="text-3xl font-serif mb-6">The Hub for Real Estate Investment</h2> <p class="text-gray-600 mb-6">Where urban connectivity meets lakeside serenity - Ahmedabad's most coveted address.</p> <ul class="space-y-4">
-                    <li class="flex items-center">✔ A Community of Achievers</li>
-                    <li class="flex items-center">✔ Exclusivity by Design</li>
-                    <li class="flex items-center">✔ Luxury Retail & Lakefront Surroundings</li>
-                </ul>
+    <section class="py-24 px-6 bg-gray-50 border-b">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-serif text-center mb-16 uppercase tracking-widest">A Real Estate Paradise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                <div data-aos="zoom-in">
+                    <p class="text-5xl font-bold text-gold mb-3">13%</p>
+                    <p class="text-xs uppercase font-bold tracking-widest text-gray-500">Price Rise (Past 3 Yrs)</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <p class="text-5xl font-bold text-gold mb-3">#1</p>
+                    <p class="text-xs uppercase font-bold tracking-widest text-gray-500">UNESCO Heritage City</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <p class="text-5xl font-bold text-gold mb-3">2025</p>
+                    <p class="text-xs uppercase font-bold tracking-widest text-gray-500">Metro Blue Line Ready</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <p class="text-5xl font-bold text-gold mb-3">₹1,300 Cr</p>
+                    <p class="text-xs uppercase font-bold tracking-widest text-gray-500">Revenue Potential</p>
+                </div>
             </div>
-            <div class="h-96 bg-gray-300" data-aos="fade-right"></div> </div>
-    </section>
-
-    <section class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-serif text-center mb-12">Strategic Location Advantage</h2> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="border-b pb-2 flex justify-between"><span>Vastrapur Lake Garden</span> <span class="font-bold">3 min</span></div>
-            <div class="border-b pb-2 flex justify-between"><span>Nexus Ahmedabad One Mall</span> <span class="font-bold">3 min</span></div>
-            <div class="border-b pb-2 flex justify-between"><span>Gujarat University Metro</span> <span class="font-bold">4 min</span></div>
-            <div class="border-b pb-2 flex justify-between"><span>IIM Ahmedabad</span> <span class="font-bold">6 min</span></div>
-            <div class="border-b pb-2 flex justify-between"><span>International Airport</span> <span class="font-bold">24 min</span></div>
         </div>
     </section>
 
-    <section class="py-20 bg-dark text-white text-center">
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif mb-4">The Heart of Connectivity</h2>
+                <p class="text-gray-500 italic">Where urban life meets lakeside serenity.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-6">
+                <div class="flex justify-between border-b border-gray-100 py-3" data-aos="fade-right">
+                    <span class="font-medium">Vastrapur Lake Garden</span>
+                    <span class="text-gold font-bold">3 min</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-100 py-3" data-aos="fade-left">
+                    <span class="font-medium">Nexus Ahmedabad One Mall</span>
+                    <span class="text-gold font-bold">3 min</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-100 py-3" data-aos="fade-right">
+                    <span class="font-medium">Sterling Hospital</span>
+                    <span class="text-gold font-bold">4 min</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-100 py-3" data-aos="fade-left">
+                    <span class="font-medium">IIM Ahmedabad</span>
+                    <span class="text-gold font-bold">6 min</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-100 py-3" data-aos="fade-right">
+                    <span class="font-medium">Gujarat University Metro</span>
+                    <span class="text-gold font-bold">4 min</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-100 py-3" data-aos="fade-left">
+                    <span class="font-medium">International Airport</span>
+                    <span class="text-gold font-bold">24 min</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-stone-900 text-white text-center">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-3xl font-serif mb-6 text-gold">128 Years of Excellence</h2> <p class="mb-12">India's No.1 Developer by Booking Value shaping Gujarat's skyline.</p> <div class="grid grid-cols-2 md:grid-cols-4 gap-4 opacity-80">
-                <p>Mumbai</p><p>Kolkata</p><p>Bengaluru</p><p>Delhi</p> </div>
+            <h2 class="text-gold text-4xl font-serif mb-6 uppercase">128 Years of Trust</h2>
+            <p class="text-lg opacity-80 mb-12">India’s No.1 Developer by Booking Value, bringing global luxury standards to Vastrapur.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-[10px] uppercase tracking-[0.4em] font-bold opacity-50">
+                <p>Mumbai</p>
+                <p>Bengaluru</p>
+                <p>Delhi NCR</p>
+                <p>Pune</p>
+            </div>
         </div>
     </section>
 
-    <section id="enquire" class="py-20 px-6 bg-gray-100">
-        <div class="max-w-xl mx-auto bg-white p-8 shadow-xl" data-aos="flip-up">
-            <h2 class="text-2xl font-serif mb-4 text-center">Register Your Interest</h2> <form class="space-y-4">
-                <input type="text" placeholder="Full Name" class="w-full border p-3 focus:outline-none focus:border-gold" required> <input type="tel" placeholder="Mobile Number" class="w-full border p-3 focus:outline-none focus:border-gold" required> <input type="email" placeholder="Email Address" class="w-full border p-3 focus:outline-none focus:border-gold" required> <select class="w-full border
+    <section id="enquire" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-xl mx-auto bg-white p-12 shadow-2xl rounded-sm" data-aos="zoom-in">
+            <h2 class="text-3xl font-serif text-center mb-4">Register Your Interest</h2>
+            <p class="text-center text-gray-500 mb-10 text-sm">Priority access to floor plans and launch offers.</p>
+            
+            <form action="#" class="space-y-6">
+                <div class="border-b border-gray-300">
+                    <input type="text" placeholder="Full Name" class="w-full py-3 px-1 outline-none focus:border-gold transition-colors" required>
+                </div>
+                <div class="border-b border-gray-300">
+                    <input type="tel" placeholder="Mobile Number (10 Digits)" pattern="[0-9]{10}" class="w-full py-3 px-1 outline-none focus:border-gold transition-colors" required>
+                </div>
+                <div class="border-b border-gray-300">
+                    <input type="email" placeholder="Email Address" class="w-full py-3 px-1 outline-none focus:border-gold transition-colors" required>
+                </div>
+                <div>
+                    <select class="w-full py-3 border-b border-gray-300 text-gray-500 outline-none cursor-pointer">
+                        <option>Are you a broker / CP?</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-gold text-white py-5 font-bold uppercase tracking-widest hover:bg-black transition-all mt-4">Submit Expression of Interest</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 px-6 border-t">
+        <div class="max-w-7xl mx-auto text-[10px] text-gray-400 text-center leading-relaxed tracking-wider uppercase">
+            <p class="mb-4">RERA NO: MAA16636/240326/071131 | REGISTERED AT GUJRERA.GUJARAT.GOV.IN</p>
+            <p>Godrej Properties Limited. Project name: GODREJ ALTUS, Vastrapur, Ahmedabad.</p>
+            <p class="mt-4 lowercase italic">All images are artist's impressions. Specification subject to final agreement.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
